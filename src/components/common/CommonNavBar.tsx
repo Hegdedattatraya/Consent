@@ -17,7 +17,7 @@ const CommonNavBar = () => {
       <div className="flex items-center gap-4">
         <div className="flex items-center">
           <img src="\images\logo.jpeg" alt="Logo" className="w-10 h-10 rounded-full" />
-          <Link to="/" className="ml-2">Consent Management</Link>
+          <Link to="/" className="ml-2">Zophy Solutions</Link>
         </div>
         <div className="hidden md:flex gap-8">
           <Link to="/">Home</Link>
