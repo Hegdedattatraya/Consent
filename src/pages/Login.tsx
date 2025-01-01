@@ -1,12 +1,19 @@
 import React from "react";
 import { LockOutlined, UserOutlined } from "@ant-design/icons";
 import { Button, Form, Input } from "antd";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import LoginPageIcon from "../assets/svg/LoginPageIcon";
 import { CommonNavBar, Footer } from "../components/common";
 
 
 const Login = () => {
+  const navigate = useNavigate();
+
+  
+  const goToDashboard = () => {
+    navigate("/dashboard");
+  };
+
   const onFinish = (values: { username: string; password: string }) => {
     console.log(values);
   };
@@ -34,6 +41,11 @@ const Login = () => {
           <div className="flex justify-between  mt-4">
           <Link to="/register">Register</Link>
           <Link to="/forgot-password">Forgot Password?</Link>
+          </div>
+          <div className="mt-4">
+            <Button type="link" onClick={goToDashboard}>
+              Go to Dashboard
+            </Button>
           </div>
 
 
