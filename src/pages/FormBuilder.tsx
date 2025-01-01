@@ -48,7 +48,7 @@ const FormBuilder: React.FC = () => {
               <td className="p-2 border">{form.name}</td>
               <td className="p-2 border">{form.description}</td>
               <td className="p-2 border">{form.status}</td>
-              <td className="p-2 border flex justify-center gap-2">
+              <td className="p-2 border flex justify-center gap-6">
                 <button
                   onClick={() => handleEditForm(form.id)}
                   className="bg-primary text-secondary px-2 py-1 rounded hover:bg-primary"
